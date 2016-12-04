@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_a_player_a_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_a_player_a_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_a_player_b_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_a_player_b_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_a_score_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_a_score_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_b_player_a_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_b_player_a_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_b_player_b_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_b_player_b_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_b_score_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <Spinner
+        android:id="@+id/activity_add_edit_game_team_b_score_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/activity_add_player_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"/>
+
+</LinearLayout>

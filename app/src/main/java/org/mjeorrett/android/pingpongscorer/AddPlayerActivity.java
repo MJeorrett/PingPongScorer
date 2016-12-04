@@ -43,7 +43,7 @@ public class AddPlayerActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-
+                // TODO: 04/12/2016 check that nickname is unique
                 String firstName = mFirstNameEditText.getText().toString();
                 String lastName = mLastNameEditText.getText().toString();
                 String nickname = mNicknameEditText.getText().toString();
