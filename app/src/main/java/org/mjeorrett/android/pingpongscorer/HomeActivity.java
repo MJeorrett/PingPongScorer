@@ -10,6 +10,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private Button mAddPlayerButton;
     private Button mViewPlayersButton;
+    private Button mAddGamebutton;
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
@@ -35,6 +36,16 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick( View view ) {
 
                 Intent intent = PlayerListActivity.newIntent( HomeActivity.this );
+                startActivity( intent );
+            }
+        });
+
+        mAddGamebutton = (Button) findViewById( R.id.activity_home_add_game_button );
+        mAddGamebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = AddGameActivity.newIntent( HomeActivity.this );
                 startActivity( intent );
             }
         });

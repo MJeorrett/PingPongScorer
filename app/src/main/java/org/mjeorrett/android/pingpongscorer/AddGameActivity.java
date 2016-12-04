@@ -1,5 +1,7 @@
 package org.mjeorrett.android.pingpongscorer;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +26,12 @@ public class AddGameActivity extends AppCompatActivity {
     private Spinner mTeamBPlayerASpinner;
     private Spinner mTeamBPlayerBSpinner;
     private Spinner mTeamBScoreSpinner;
+
+    public static Intent newIntent( Context context ) {
+
+        Intent intent = new Intent( context, AddGameActivity.class );
+        return intent;
+    }
 
     @Override
     protected void onCreate( @Nullable Bundle savedInstanceState ) {
