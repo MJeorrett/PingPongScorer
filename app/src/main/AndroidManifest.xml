@@ -19,6 +19,14 @@
 
         <activity
             android:name=".AddPlayerActivity"
+            android:parentActivityName=".PlayerListActivity"/>
+
+        <activity
+            android:name=".ViewPlayerActivity"
+            android:parentActivityName=".PlayerListActivity"/>
+
+        <activity
+            android:name=".PlayerListActivity"
             android:parentActivityName=".HomeActivity"/>
 
     </application>

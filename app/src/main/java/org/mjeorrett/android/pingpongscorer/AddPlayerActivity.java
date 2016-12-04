@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.mjeorrett.android.pingpongscorer.db.PPSPlayerServer;
+import org.mjeorrett.android.pingpongscorer.db.Player.PPSPlayerServer;
 
 /**
  * Created by user on 03/12/2016.

@@ -2,9 +2,9 @@
     <string name="app_name">PingPongScorer</string>
     <string name="activity_home_add_player_button">Add Player</string>
     <string name="activity_home_view_players_button">View Players</string>
-    <string name="activity_add_edit_player_first_name_text_view">First Name</string>
-    <string name="activity_add_edit_player_last_name_text_view">Last Name</string>
-    <string name="activity_add_edit_player_nickname_text_view">Nickname</string>
+    <string name="player_first_name_label">First Name</string>
+    <string name="player_last_name_label">Last Name</string>
+    <string name="player_nickname_label">Nickname</string>
     <string name="activity_add_edit_player_first_name_text_hint">Enter first name.</string>
     <string name="activity_add_edit_player_last_name_text_hint">Enter last name.</string>
     <string name="activity_add_edit_player_nickname_text_hint">Enter nickname.</string>

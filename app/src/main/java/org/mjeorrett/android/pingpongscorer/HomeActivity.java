@@ -9,6 +9,7 @@ import android.widget.Button;
 public class HomeActivity extends AppCompatActivity {
 
     private Button mAddPlayerButton;
+    private Button mViewPlayersButton;
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
@@ -17,11 +18,23 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         mAddPlayerButton = (Button) findViewById( R.id.activity_home_add_player_button );
-        mAddPlayerButton.setOnClickListener(new View.OnClickListener() {
+        mAddPlayerButton.setOnClickListener( new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
                 Intent intent = AddPlayerActivity.newIntent( HomeActivity.this );
+                startActivity( intent );
+            }
+        });
+
+        mViewPlayersButton = (Button) findViewById( R.id.activity_home_view_players_button );
+        mViewPlayersButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick( View view ) {
+
+                Intent intent = PlayerListActivity.newIntent( HomeActivity.this );
                 startActivity( intent );
             }
         });

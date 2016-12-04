@@ -1,4 +1,4 @@
-package org.mjeorrett.android.pingpongscorer.db;
+package org.mjeorrett.android.pingpongscorer.db.Player;
 
 import java.util.UUID;
 
@@ -13,17 +13,17 @@ public class PPSPlayer {
     private String mLastName;
     private String mNickname;
 
-    public PPSPlayer( String firstName, String lastName, String nickname ) {
-
-        this( UUID.randomUUID(), firstName, lastName, nickname );
-    }
-
     public PPSPlayer( UUID uuid, String firstName, String lastName, String nickname ) {
 
         mUUID = uuid;
         mFirstName = firstName;
         mLastName = lastName;
         mNickname = nickname;
+    }
+
+    public PPSPlayer( String firstName, String lastName, String nickname ) {
+
+        this( UUID.randomUUID(), firstName, lastName, nickname );
     }
 
     public UUID getUUID() {
@@ -40,5 +40,10 @@ public class PPSPlayer {
 
     public String getNickname() {
         return mNickname;
+    }
+
+    public String fullDescription() {
+
+        return mFirstName + mLastName + " ( " + mNickname + " )";
     }
 }
