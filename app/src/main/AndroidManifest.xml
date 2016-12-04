@@ -18,19 +18,19 @@
         </activity>
 
         <activity
-            android:name=".AddPlayerActivity"
-            android:parentActivityName=".PlayerListActivity"/>
+            android:name=".player.AddPlayerActivity"
+            android:parentActivityName=".player.PlayerListActivity"/>
 
         <activity
-            android:name=".ViewPlayerActivity"
-            android:parentActivityName=".PlayerListActivity"/>
+            android:name=".player.ViewPlayerActivity"
+            android:parentActivityName=".player.PlayerListActivity"/>
 
         <activity
-            android:name=".PlayerListActivity"
+            android:name=".player.PlayerListActivity"
             android:parentActivityName=".HomeActivity"/>
 
         <activity
-            android:name=".AddGameActivity"/>
+            android:name=".game.AddGameActivity"/>
 
     </application>
 

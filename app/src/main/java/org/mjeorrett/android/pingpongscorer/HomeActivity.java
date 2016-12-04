@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.mjeorrett.android.pingpongscorer.game.AddGameActivity;
+import org.mjeorrett.android.pingpongscorer.player.AddPlayerActivity;
+import org.mjeorrett.android.pingpongscorer.player.PlayerListActivity;
+
 public class HomeActivity extends AppCompatActivity {
 
     private Button mAddPlayerButton;

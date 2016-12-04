@@ -1,4 +1,4 @@
-package org.mjeorrett.android.pingpongscorer;
+package org.mjeorrett.android.pingpongscorer.game;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import org.mjeorrett.android.pingpongscorer.R;
 import org.mjeorrett.android.pingpongscorer.db.Player.PPSPlayer;
 import org.mjeorrett.android.pingpongscorer.db.Player.PPSPlayerServer;
 
