@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.mjeorrett.android.pingpongscorer.R;
 import org.mjeorrett.android.pingpongscorer.db.Player.PPSPlayerServer;
@@ -44,10 +45,17 @@ public class AddPlayerActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                // TODO: 04/12/2016 check that nickname is unique
+
+                String nickname = mNicknameEditText.getText().toString();
+
+                if ( PPSPlayerServer.getInstance( AddPlayerActivity.this ).nicknameFree( nickname) ) {
+
+                    Toast.makeText( AddPlayerActivity.this, "Sorry nickname " + nickname + " is already taken", Toast.LENGTH_SHORT ).show();
+                    return;
+                }
+
                 String firstName = mFirstNameEditText.getText().toString();
                 String lastName = mLastNameEditText.getText().toString();
-                String nickname = mNicknameEditText.getText().toString();
                 PPSPlayerServer.getInstance( AddPlayerActivity.this ).addPlayer( firstName, lastName, nickname );
                 finish();
             }

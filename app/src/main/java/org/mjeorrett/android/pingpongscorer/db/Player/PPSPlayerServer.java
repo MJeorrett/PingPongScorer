@@ -44,6 +44,27 @@ public class PPSPlayerServer {
         mDatabase.insert( PlayerTable.NAME, null, contentValues );
     }
 
+    public boolean nicknameFree( String userName ) {
+
+        return getAllNicknames().contains( userName );
+    }
+
+    public List<String> getAllNicknames() {
+
+        List<String> nicknames = new ArrayList<>();
+        String[] columnNames = { PlayerTable.Cols.NICKNAME };
+        Cursor cursor = mDatabase.query( PlayerTable.NAME, columnNames, null, null, null, null, null );
+        cursor.moveToFirst();
+
+        while ( !cursor.isAfterLast() ) {
+            String nickname = cursor.getString( 0 );
+            nicknames.add( nickname );
+            cursor.moveToNext();
+        }
+
+        return nicknames;
+    }
+
     public List<PPSPlayer> getPlayers() {
 
         List<PPSPlayer> players = new ArrayList<>();
